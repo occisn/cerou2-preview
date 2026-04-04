@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentions légales - Protégeons la Vallée du Cérou</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/img/Logo-blanc.svg" alt="Protégeons la Vallée du Cérou">
+    </a>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav>
+      <a href="lassociation.html">L'association</a>
+      <a href="charte.html">Charte de l'association</a>
+      <a href="pourquoi-eoliennes-fausse-bonne-idee.html">Éoliennes industrielles</a>
+      <a href="pourquoi-photovoltaique-industriel-fausse-bonne-idee.html">Photovoltaïque industriel</a>
+      <a href="pour-aller-plus-loin.html">Pour aller plus loin…</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="on-parle-de-nous.html">On parle de nous</a>
+      <a href="flyers.html">Flyers</a>
+      <a href="adherer.html">Adhérer</a>
+      <a href="nous-contacter.html">Nous contacter</a>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h1>Mentions légales</h1>
+    <p><strong>Éditeur :</strong> Le site est édité par Protégeons la Vallée du Cérou dans le Tarn – association loi 1901 – siège social : 21 rue Imbert, 81640 Salles – contact : <a href="mailto:valleeducerou@gmail.com">valleeducerou@gmail.com</a></p>
+    <p><strong>Responsable de publication :</strong> président de l'association</p>
+    <p><strong>Prestataire hébergeur :</strong> le site est hébergé par OVH SAS, 2 rue Kellermann, 59100 Roubaix</p>
+  </div>
+</section>
+
+<footer>
+  <p><a href="index.html">Protégeons la Vallée du Cérou dans le Tarn</a> — <a href="mentions-legales.html">Mentions légales</a></p>
+</footer>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  var nav = document.querySelector('nav');
+  var open = nav.classList.toggle('open');
+  this.setAttribute('aria-expanded', open);
+  this.textContent = open ? '\u2715' : '\u2630';
+});
+</script>
+</body>
+</html>

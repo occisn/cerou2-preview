@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'association - Protégeons la Vallée du Cérou</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/img/Logo-blanc.svg" alt="Protégeons la Vallée du Cérou">
+    </a>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav>
+      <a href="lassociation.html">L'association</a>
+      <a href="charte.html">Charte de l'association</a>
+      <a href="pourquoi-eoliennes-fausse-bonne-idee.html">Éoliennes industrielles</a>
+      <a href="pourquoi-photovoltaique-industriel-fausse-bonne-idee.html">Photovoltaïque industriel</a>
+      <a href="pour-aller-plus-loin.html">Pour aller plus loin…</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="on-parle-de-nous.html">On parle de nous</a>
+      <a href="flyers.html">Flyers</a>
+      <a href="adherer.html">Adhérer</a>
+      <a href="nous-contacter.html">Nous contacter</a>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h1>L'association « Protégeons la Vallée du Cérou dans le Tarn »</h1>
+
+    <p><em>Notre association « Protégeons la Vallée du Cérou dans le Tarn » est mobilisée pour protéger notre cadre de vie de grande qualité, à la fois sur le plan environnemental et humain. Elle lutte donc contre les énergies renouvelables à dimensions industrielles, qui servent d'abord des intérêts financiers privés.</em></p>
+
+    <h4>Nous luttons pour des projets d'énergies renouvelables à taille humaine, respectueux de notre environnement, et qui associent un maximum d'habitants. Nous défendons notre territoire contre l'appétit financier d'intérêts privés.</h4>
+
+    <p>Parti en 2023 d'une inquiétude face à un risque d'implantation d'éoliennes industrielles à Salles, notre mouvement s'est vite étendu dans les villages alentours, et a permis de fédérer les énergies. Depuis, la menace s'est élargie : aux projets éoliens s'ajoutent désormais de nombreux projets de <strong>photovoltaïque industriel et d'agrivoltaïsme</strong>, qui menacent nos terres agricoles et nos paysages sur l'ensemble de la vallée. Notre objectif reste le même : éviter que notre Vallée du Cérou soit définitivement défigurée par des projets industriels d'énergies renouvelables.</p>
+
+    <p>L'association compte aujourd'hui plus de 140 membres.</p>
+
+    <h1>L'association « Protégeons la Vallée du Cérou dans le Tarn » en bref</h1>
+
+    <h2>Nos valeurs :</h2>
+    <img src="assets/img/nuage-de-mots-_wordcloud-_recadree-1024x777.png" alt="Nuage de mots - valeurs de l'association">
+
+    <h2>Le bureau de l'association</h2>
+    <p>Présidents : André Nouviale, Michel Tigli, Jacques Caprasse</p>
+    <p>Secrétaires : Véronique Gaumont, Bettina Bergounhou</p>
+    <p>Trésorières : Ghislaine Tigli, Catherine Caprasse</p>
+
+    <h2>Historique de l'association « Protégeons la Vallée du Cérou dans le Tarn »</h2>
+
+    <p>Après Tchernobyl et Fukushima, l'énergie produite par les centrales nucléaires a été considérée comme une énergie à combattre et remplacer.</p>
+
+    <p>Cette conception a été à la base de la création du mouvement écologique. Il fallait produire notre énergie au moyen d'une « alternative propre »… L'énergie éolienne nous est présentée par ce mouvement depuis plus de 20 ans comme une « énergie verte »</p>
+
+    <p>Avant d'y être confrontés de près et de nous renseigner sur le sujet de manière approfondie, plusieurs d'entre nous pensaient aussi cela.</p>
+
+    <p>Notre mouvement a donc démarré par une demande de réflexion et de concertation avec les habitants au préalable.</p>
+
+    <h4>Pourquoi les communes sont-elles tentées ?</h4>
+    <ul>
+      <li>Les EnR sont présentées comme totalement vertes. Volonté de paraître « vert »</li>
+      <li>Le vert est assorti de retombées financières pour les communes</li>
+      <li>Pression des agriculteurs car retombées financières pour les agriculteurs (quelques agriculteurs !)</li>
+      <li>Démarchage intensif des développeurs de photovoltaïque industriel, qui proposent des rentes attractives aux propriétaires fonciers</li>
+    </ul>
+
+    <p><a href="charte.html">Voir la charte de l'association</a> | <a href="adherer.html">Adhérer</a> | <a href="nous-contacter.html">Nous contacter</a></p>
+  </div>
+</section>
+
+<footer>
+  <p><a href="index.html">Protégeons la Vallée du Cérou dans le Tarn</a> — <a href="mentions-legales.html">Mentions légales</a></p>
+</footer>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  var nav = document.querySelector('nav');
+  var open = nav.classList.toggle('open');
+  this.setAttribute('aria-expanded', open);
+  this.textContent = open ? '\u2715' : '\u2630';
+});
+</script>
+</body>
+</html>

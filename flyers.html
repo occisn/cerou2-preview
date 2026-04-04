@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flyers - Protégeons la Vallée du Cérou</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/img/Logo-blanc.svg" alt="Protégeons la Vallée du Cérou">
+    </a>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav>
+      <a href="lassociation.html">L'association</a>
+      <a href="charte.html">Charte de l'association</a>
+      <a href="pourquoi-eoliennes-fausse-bonne-idee.html">Éoliennes industrielles</a>
+      <a href="pourquoi-photovoltaique-industriel-fausse-bonne-idee.html">Photovoltaïque industriel</a>
+      <a href="pour-aller-plus-loin.html">Pour aller plus loin…</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="on-parle-de-nous.html">On parle de nous</a>
+      <a href="flyers.html">Flyers</a>
+      <a href="adherer.html">Adhérer</a>
+      <a href="nous-contacter.html">Nous contacter</a>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h1>Flyers</h1>
+
+    <p>Liens de téléchargement :</p>
+
+    <ul>
+      <li><a href="assets/pdf/flyer-2-recto-verso.pdf"><strong>Flyer 2</strong> en format PDF</a> (prêt à imprimer recto-verso)</li>
+      <li><a href="assets/pdf/flyer-3-recto-seul.pdf"><strong>Flyer 3</strong> en format PDF</a> (prêt à imprimer recto seul)</li>
+      <li><a href="assets/pdf/banniere-recto-verso.pdf"><strong>Flyer « bannière »</strong> en format PDF</a> (prêt à imprimer recto-verso)</li>
+    </ul>
+
+    <p><strong>Trois visuels servant de base aux flyers :</strong></p>
+
+    <img src="assets/img/visuel-A-1024x726.jpg" alt="Visuel A">
+    <img src="assets/img/visuel-B-1024x576.jpg" alt="Visuel B">
+    <img src="assets/img/visuel-C-709x1024.jpg" alt="Visuel C">
+  </div>
+</section>
+
+<footer>
+  <p><a href="index.html">Protégeons la Vallée du Cérou dans le Tarn</a> — <a href="mentions-legales.html">Mentions légales</a></p>
+</footer>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  var nav = document.querySelector('nav');
+  var open = nav.classList.toggle('open');
+  this.setAttribute('aria-expanded', open);
+  this.textContent = open ? '\u2715' : '\u2630';
+});
+</script>
+</body>
+</html>

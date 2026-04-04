@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charte de l'association - Protégeons la Vallée du Cérou</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/img/Logo-blanc.svg" alt="Protégeons la Vallée du Cérou">
+    </a>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav>
+      <a href="lassociation.html">L'association</a>
+      <a href="charte.html">Charte de l'association</a>
+      <a href="pourquoi-eoliennes-fausse-bonne-idee.html">Éoliennes industrielles</a>
+      <a href="pourquoi-photovoltaique-industriel-fausse-bonne-idee.html">Photovoltaïque industriel</a>
+      <a href="pour-aller-plus-loin.html">Pour aller plus loin…</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="on-parle-de-nous.html">On parle de nous</a>
+      <a href="flyers.html">Flyers</a>
+      <a href="adherer.html">Adhérer</a>
+      <a href="nous-contacter.html">Nous contacter</a>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h1>Charte de l'association</h1>
+
+    <p>Notre association est consciente de la <strong>nécessité de décarboner la production d'énergie</strong> et de développer une <strong>production d'énergie renouvelable.</strong></p>
+
+    <p>Cependant nous ne voulons pas <strong>sacrifier la spécificité de notre vallée, en particulier sa qualité environnementale, à une industrialisation non réfléchie de cette production.</strong></p>
+
+    <p>L'association se positionne <strong>contre l'éolien industriel dans notre vallée</strong> car l'impact de ces infrastructures est trop important pour le paysage, le tourisme, la biodiversité et la santé.</p>
+
+    <p>L'association se positionne également <strong>contre un développement irraisonné du photovoltaïque. Il est à noter que la consommation d'électricité totale des 26 communes de la vallée du Cérou correspond à la production d'environ 10 hectares de panneaux photovoltaïques.</strong></p>
+
+    <p>Nous <strong>privilégions l'installation de panneaux photovoltaïques</strong> <strong>sur toutes les surfaces déjà artificialisées appartenant aux communes ou à des particuliers y compris dans les villages classés</strong> (bâtiments et jardins, hangars agricoles, parkings, cours des écoles, friches industrielles, anciennes carrières…).</p>
+
+    <p>Nous nous <strong>opposons à l'installation de panneaux dans les habitats naturels non artificialisés</strong> pour éviter de contribuer à l'effondrement de la biodiversité.</p>
+
+    <p><strong>Concernant l'agrivoltaïsme, nous sommes préoccupés par les difficultés financières du monde agricole. Nous sommes également conscients de l'aide que la location des terres cultivées peut apporter à celui-ci.</strong> De plus ces panneaux peuvent apporter une plus-value agronomique (sécheresse, grêle, gel, …).</p>
+
+    <p>Nous proposons, conformément aux <strong>recommandations de l'INRAE</strong>, de répartir l'installation de ces structures sur des superficies « raisonnables » (typiquement <strong>1 à 5 hectares par exploitation</strong>)<strong>. La couverture au sol par les panneaux devrait être de 20 % (soit 2000 m² par ha)</strong> ce qui optimise la production agricole.</p>
+
+    <p>Par ailleurs, l'installation de ces centrales solaires est à favoriser pour <strong>le plus grand nombre des agriculteurs, dans un souci d'équité.</strong></p>
+
+    <p>Il convient d'être vigilant sur le choix des sites d'installation et la surface totale sur la vallée, afin de <strong>ne pas pénaliser les autres habitants et les activités touristiques</strong>, et en essayant <strong>de ne pas saturer visuellement le paysage.</strong> Nous préconisons fortement que les champs dédiés à ces centrales soient entourés de haies.</p>
+
+    <p><strong>Une politique territoriale coordonnée nous semble indispensable (typiquement pour définir la surface éligible pour l'agrivoltaïsme au sein de la surface agricole totale de la vallée et de chaque commune).</strong></p>
+
+    <p><strong>Nous rappelons enfin que la vraie solution face au changement climatique et à la diminution des ressources terrestres n'est pas de produire toujours plus, mais d'aller vers une sobriété assumée.</strong></p>
+
+    <p><a href="assets/pdf/Charte-Protegeons-la-Vallee-du-Cerou-dans-le-Tarn.pdf">Télécharger la charte en PDF</a></p>
+  </div>
+</section>
+
+<footer>
+  <p><a href="index.html">Protégeons la Vallée du Cérou dans le Tarn</a> — <a href="mentions-legales.html">Mentions légales</a></p>
+</footer>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  var nav = document.querySelector('nav');
+  var open = nav.classList.toggle('open');
+  this.setAttribute('aria-expanded', open);
+  this.textContent = open ? '\u2715' : '\u2630';
+});
+</script>
+</body>
+</html>

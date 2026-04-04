@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On parle de nous - Protégeons la Vallée du Cérou</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="assets/img/Logo-blanc.svg" alt="Protégeons la Vallée du Cérou">
+    </a>
+    <button class="menu-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+    <nav>
+      <a href="lassociation.html">L'association</a>
+      <a href="charte.html">Charte de l'association</a>
+      <a href="pourquoi-eoliennes-fausse-bonne-idee.html">Éoliennes industrielles</a>
+      <a href="pourquoi-photovoltaique-industriel-fausse-bonne-idee.html">Photovoltaïque industriel</a>
+      <a href="pour-aller-plus-loin.html">Pour aller plus loin…</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="on-parle-de-nous.html">On parle de nous</a>
+      <a href="flyers.html">Flyers</a>
+      <a href="adherer.html">Adhérer</a>
+      <a href="nous-contacter.html">Nous contacter</a>
+    </nav>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <h1>On parle de nous</h1>
+
+    <ul>
+      <li><strong>■ L'association « Protégeons la Vallée du Cérou dans le Tarn » interviewée le 18 janvier 2024 sur CFM Radio</strong> : <a href="https://www.cfmradio.fr/protegeons-la-vallee-du-cerou-dans-le-tarn">écouter</a></li>
+      <li><strong>■ La Dépêche mentionne le 29 novembre 2023 la création de l'association :</strong> <a href="https://www.ladepeche.fr/2023/11/29/protegeons-la-vallee-du-cerou-nouvelle-association-11609180.php">lire l'article</a></li>
+      <li><strong>■ La Dépêche mentionne le 7 septembre 2023 les tensions à Salles autour d'un projet éolien :</strong> <a href="https://www.ladepeche.fr/2023/09/07/salles-sur-cerou-tensions-autour-dun-futur-projet-eolien-11437824.php">lire l'article</a></li>
+      <li><strong>■ Interview à Radio d'Autan le 6 septembre 2023</strong></li>
+      <li><strong>■ Le Tarn Libre évoque la réunion publique du 30 août :</strong> <a href="https://www.letarnlibre.com/salles-leolien-interpelle-la-population/">lire l'article</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p><a href="index.html">Protégeons la Vallée du Cérou dans le Tarn</a> — <a href="mentions-legales.html">Mentions légales</a></p>
+</footer>
+<script>
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  var nav = document.querySelector('nav');
+  var open = nav.classList.toggle('open');
+  this.setAttribute('aria-expanded', open);
+  this.textContent = open ? '\u2715' : '\u2630';
+});
+</script>
+</body>
+</html>
