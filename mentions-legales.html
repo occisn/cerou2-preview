@@ -31,7 +31,7 @@
 <section>
   <div class="container">
     <h1>Mentions légales</h1>
-    <p><strong>Éditeur :</strong> Le site est édité par Protégeons la Vallée du Cérou dans le Tarn – association loi 1901 – siège social : 21 rue Imbert, 81640 Salles – contact : <a href="mailto:valleeducerou@gmail.com">valleeducerou@gmail.com</a></p>
+    <p><strong>Éditeur :</strong> Le site est édité par Protégeons la Vallée du Cérou dans le Tarn – association loi 1901 – siège social : 21 rue Imbert, 81640 Salles – contact : <span class="email-link" data-u="valleeducerou" data-d="gmail.com"></span></p>
     <p><strong>Responsable de publication :</strong> président de l'association</p>
     <p><strong>Prestataire hébergeur :</strong> le site est hébergé par OVH SAS, 2 rue Kellermann, 59100 Roubaix</p>
   </div>
@@ -46,6 +46,13 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
   var open = nav.classList.toggle('open');
   this.setAttribute('aria-expanded', open);
   this.textContent = open ? '\u2715' : '\u2630';
+});
+document.querySelectorAll('.email-link').forEach(function(el) {
+  var addr = el.dataset.u + '@' + el.dataset.d;
+  var a = document.createElement('a');
+  a.href = 'mailto:' + addr;
+  a.textContent = addr;
+  el.replaceWith(a);
 });
 </script>
 </body>

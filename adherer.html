@@ -32,7 +32,7 @@
   <div class="container">
     <h1>Adhérer</h1>
 
-    <p>Pour adhérer à « Protégeons la Vallée du Cérou dans le Tarn », il suffit d'envoyer un mail à <a href="mailto:valleeducerou@gmail.com">valleeducerou@gmail.com</a></p>
+    <p>Pour adhérer à « Protégeons la Vallée du Cérou dans le Tarn », il suffit d'envoyer un mail à <span class="email-link" data-u="valleeducerou" data-d="gmail.com"></span></p>
 
     <p><a href="lassociation.html">En savoir plus sur l'association</a></p>
   </div>
@@ -47,6 +47,13 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
   var open = nav.classList.toggle('open');
   this.setAttribute('aria-expanded', open);
   this.textContent = open ? '\u2715' : '\u2630';
+});
+document.querySelectorAll('.email-link').forEach(function(el) {
+  var addr = el.dataset.u + '@' + el.dataset.d;
+  var a = document.createElement('a');
+  a.href = 'mailto:' + addr;
+  a.textContent = addr;
+  el.replaceWith(a);
 });
 </script>
 </body>

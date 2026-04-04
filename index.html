@@ -147,7 +147,7 @@
 
     <p><a href="lassociation.html">En savoir plus sur l'association &laquo;&nbsp;Protégeons la Vallée du Cérou dans le Tarn&nbsp;&raquo;</a></p>
 
-    <p>Votre adhésion renforcera notre voix. Votre cotisation (5 euros, ou plus si vous le souhaitez) nous donnera des moyens pour organiser une résistance active contre ces projets, qu'ils soient éoliens ou photovoltaïques. Pour nous rejoindre, ou simplement vous renseigner, n'hésitez pas à nous écrire à l'adresse <a href="mailto:valleeducerou@gmail.com">valleeducerou@gmail.com</a></p>
+    <p>Votre adhésion renforcera notre voix. Votre cotisation (5 euros, ou plus si vous le souhaitez) nous donnera des moyens pour organiser une résistance active contre ces projets, qu'ils soient éoliens ou photovoltaïques. Pour nous rejoindre, ou simplement vous renseigner, n'hésitez pas à nous écrire à l'adresse <span class="email-link" data-u="valleeducerou" data-d="gmail.com"></span></p>
 
     <p><strong>Par notre mobilisation, nous souhaitons amener nos élus à <em>réfléchir ensemble</em> et dire non à l'industrialisation de notre vallée</strong> — qu'elle prenne la forme d'éoliennes géantes ou de centrales photovoltaïques au sol — pour une consommation immodérée d'électricité, utilisée ailleurs. Notre association reste ouverte à toutes discussions citoyennes.</p>
   </div>
@@ -164,6 +164,13 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
   var open = nav.classList.toggle('open');
   this.setAttribute('aria-expanded', open);
   this.textContent = open ? '\u2715' : '\u2630';
+});
+document.querySelectorAll('.email-link').forEach(function(el) {
+  var addr = el.dataset.u + '@' + el.dataset.d;
+  var a = document.createElement('a');
+  a.href = 'mailto:' + addr;
+  a.textContent = addr;
+  el.replaceWith(a);
 });
 </script>
 </body>
